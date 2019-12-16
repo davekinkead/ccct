@@ -6,20 +6,34 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900" rel="stylesheet"> 
-    <link rel="stylesheet" type="text/css" href="/screen.css" media="screen"> 
+    <link href="//fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i|Source+Sans+Pro:300,700,900" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="/assets/screen.css" media="screen">
     <meta name="google-site-verification" content="Sq1CH0XyyvGYzD8zIFr7g6yEUyGVI9N-mjr2ya4ghvk" />
+    <script src="https://kit.fontawesome.com/82c5c76c75.js" crossorigin="anonymous"></script>
   </head>
-  <body class="post">
+  <body class="post critical-thinking-matrix">
 
     <nav>
-      <span class="home"><a href="/">Critical<strong>Thinking</strong></a></span>
-      <span><a href="/resources">Resources</a></span>
-      <span><a href="/research">Research</a></span>
-      <span><a href="/thoughts">Thoughts</a></span>
-      <span><a href="/#about-us">About</a></span>
+      <span class="home desktop"><a href="/">
+        <div class="logo">
+          <span class="left one">The</span><span class="right one">Centre</span><br />
+          <span class="left two">for</span><span class="right two">Critical</span><br />
+          <span class="left three">&amp;</span><span class="right three">Creative</span><br />
+          <span class="left four"></span><span class="right four">Thinking</span><br />
+        </div>  </a></span>
+      <span class="home mobile"><a href="/">Critical<strong>Thinking</strong></a></span>
+      <ul class="pages">
+        <li><span><a href="#" onclick="hideNavigation()"><i class="fas fa-times"></i></a></span></li>
+        <li><span><a href="/services">Services</a></span></li>
+        <li><span><a href="/research">Research</a></span></li>
+        <li><span><a href="/resources">Resources</a></span></li>
+        <li><span><a href="/thoughts">Thoughts</a></span></li>
+        <li><span><a href="/about-us">About Us</a></span> </li>
+      </ul>
+      <span class="hamburger"><a href="#" onclick="showNavigation()"><i class="fas fa-bars"></i></a></span>
     </nav>
-    <section class="hero" style="background: radial-gradient(circle at 15% 15%, #31d29e, transparent), radial-gradient(circle at 85% 85%, #1b3960, transparent), url(/media/blue-abstract.jpg);  background-size: cover;">
+    <section class="hero">
+      <div class="bg-image" style="background-image: url(/media/focus.jpg); "></div>
       <div class="content">
         <h1>Critical Thinking Matrix</h1>
         <p class="description"></p>
@@ -53,10 +67,12 @@
         
         
         <p>A useful way to conceptualise critical thinking is as <em>metacogntive evaluation</em> - thinking about our thinking and evaluating its quality.  It follows then that an essential activity in the teaching of critical thinking is to help students become <em>metacognitive aware</em>.  But how does one actually do that?</p>
-    <p>The <a href="https://critical-thinking.project.uq.edu.au/files/833/CT%2520Matrix%2520Ellerton.pdf">Critical Thinking Matrix</a> is a tool developed by Peter Ellerton at the University of Queensland that helps teachers do exactly that.  First select which <em>value of inquiry</em> you&#39;d like to focus on followed by which <em>cognitive skill</em> you&#39;d like to develop.  The maxtrix will prompt you with a range of activities and descriptions of them. </p>
+    <p>The <a href="https://critical-thinking.project.uq.edu.au/files/833/CT%2520Matrix%2520Ellerton.pdf">Critical Thinking Matrix</a> is a tool developed by Peter Ellerton at the University of Queensland that helps teachers do exactly that.  </p>
+    <p><a href="https://critical-thinking.project.uq.edu.au/files/833/CT%2520Matrix%2520Ellerton.pdf"><img src="/media/ct matrix.png" alt="Critical Thinking Matrix"></a></p>
+    <p>There&#39;s a lot of information in there, so have a go with this interactive version. First select which <em>value of inquiry</em> you&#39;d like to focus on followed by which <em>cognitive skill</em> you&#39;d like to develop.  The maxtrix will prompt you with a range of activities and descriptions of them. </p>
     <p>Try it now.</p>
     <h3 id="i-want-more-select-id-value_of_inquiry-onchange-if-this-selectedindex-filtermatrix-option-value-option-select-">I want more <select id="value_of_inquiry" onchange="if (this.selectedIndex) filterMatrix();"><option value=""> ... </option></select></h3>
-    <h3 id="in-my-student-s-select-id-cognitive_skill-onchange-if-this-selectedindex-filtermatrix-option-value-option-select-">in my student&#39;s <select id="cognitive_skill" onchange="if (this.selectedIndex) filterMatrix();"><option value=""> ... </option></select></h3>
+    <h3 id="in-my-student-s-select-id-cognitive_skill-onchange-if-this-selectedindex-filtermatrix-option-value-option-select-">In my student&#39;s <select id="cognitive_skill" onchange="if (this.selectedIndex) filterMatrix();"><option value=""> ... </option></select>.</h3>
     <hr>
     <ul id="results" class="matrix"></ul>
     
@@ -142,16 +158,45 @@
           <!--End mc_embed_signup-->
           </div>
         </section>
-    <footer id="contact">
+    <footer>
       <div class="content">
-        <p>Copyright 2019 · Centre for Critical and Creative Thinking Pty Ltd · ABN 64 627 720 094</p>
-        <p>
-          <a href="mailto:hello@criticalthinking.org.au">hello@criticalthinking.org.au</span></a><br />
-          <a href="tel:+61731844650">+61 7 3184 4650</a> 
-        </p>
-        <p>Website by <a href="https://fatwombat.studio">Fat Wombat Studios</a></p>
+        <div class="logo">
+          <span class="left one">The</span><span class="right one">Centre</span><br />
+          <span class="left two">for</span><span class="right two">Critical</span><br />
+          <span class="left three">&amp;</span><span class="right three">Creative</span><br />
+          <span class="left four"></span><span class="right four">Thinking</span><br />
+        </div>
+        <div class="links">
+          <span><a href="/services">Services</a></span>
+          <span><a href="/research">Research</a></span>
+          <span><a href="/resources">Resources</a></span>
+          <span><a href="/about-us">About Us</a></span>    
+        </div>
+    
+        <div id="contact">
+          <p>
+            <a href="mailto:hello@criticalthinking.org.au">hello@criticalthinking.org.au</span></a><br />
+            <a href="tel:+61731844650">+61 7 3184 4650</a> 
+          </p>
+        </div>
+    
+        <div class="copyright">
+          <p>Copyright 2019 · Centre for Critical and Creative Thinking Pty Ltd · ABN 64 627 720 094</p>
+        </div>
       </div>
     </footer>
+    
+    <!-- Navigation -->
+    <script>
+    
+      function hideNavigation() {
+        document.querySelector('nav .pages').style.display = 'none';
+      }
+    
+      function showNavigation() {
+        document.querySelector('nav .pages').style.display = 'block';    
+      }
+    </script>
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-50866139-8"></script>
