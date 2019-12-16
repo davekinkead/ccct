@@ -62,7 +62,6 @@ section {
     padding-bottom: 1rem;
     overflow-wrap: break-word;
   }
-
 }
 
 .videowrapper {
@@ -89,6 +88,7 @@ section {
     line-height: 1.1;
     text-align: left;
   }
+  h1 { font-family: 'EB Garamond', serif; }
   h2 { font-size: 1.34rem; }
 }
 
@@ -446,7 +446,10 @@ nav .desktop { display: none; }
       text-align: right; 
     }
   }
-  .hero h1 { font-size: 5rem; }
+  .hero h1 { 
+    font-size: 4rem; 
+    max-width: 1024px;
+  }
 
   .collection .hero {
     min-height: calc(@hero-height/1.66);
