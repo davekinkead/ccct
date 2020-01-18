@@ -128,7 +128,7 @@ nav {
     display: none;
 
     li {
-      padding: 1rem 2rem;
+      padding: 2vh 2rem;
       font-weight: bold;
 
       &:hover{
@@ -256,6 +256,11 @@ nav {
   }
 }
 
+img.mugshot {
+  width: 2rem;
+  border-radius: 50%;
+}
+
 .bio {
   list-style: none;
   text-align: center;
@@ -264,10 +269,9 @@ nav {
     border-top: 1px solid #ccc;
     position: relative;
   }
-  .mugshot {
+  img.mugshot {
     width: 5rem;
     border: 1px solid #ccc;
-    border-radius: 50%;
     padding: 5px;
     background: #FFF;
   }  
@@ -301,6 +305,26 @@ nav {
   }
 }
 
+.meta {
+  margin-top: -0.25rem;
+  margin-bottom: 0.75rem;
+
+  img.mugshot {
+    float: left;
+    margin-left: 0.33rem;
+    margin-right: 0.66rem;
+  }
+
+  span {
+    display: block;
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+.post .meta {
+  margin-bottom: 1rem;
+}
+
 .collection {
   .list {
     display: flex; 
@@ -308,13 +332,9 @@ nav {
     justify-content: space-around; 
 
     .item {
+      margin: 1rem 0;
       list-style: none;
       padding: 1rem;
-
-      .meta {
-        margin-top: -0.25rem;
-        margin-bottom: 0.75rem;
-      }
     }       
 
     .title a {
@@ -335,6 +355,10 @@ nav {
     /*list-style-position: inside;*/
     margin-left: 2rem;
     padding-left: 1rem;
+  }
+
+  h2, h3, h4, h5 {
+    margin: 1rem 0;
   }
 
   img {
@@ -464,6 +488,7 @@ nav .desktop { display: none; }
 }
 
 .signup form {
+  margin: 1rem auto;
   text-align: center;
 
   label {

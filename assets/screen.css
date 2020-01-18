@@ -116,7 +116,7 @@ nav .pages {
   display: none;
 }
 nav .pages li {
-  padding: 1rem 2rem;
+  padding: 2vh 2rem;
   font-weight: bold;
 }
 nav .pages li:hover {
@@ -247,6 +247,10 @@ nav .pages li:hover {
 .home .spotlight h2 {
   margin: 0;
 }
+img.mugshot {
+  width: 2rem;
+  border-radius: 50%;
+}
 .bio {
   list-style: none;
   text-align: center;
@@ -255,10 +259,9 @@ nav .pages li:hover {
   border-top: 1px solid #ccc;
   position: relative;
 }
-.bio .mugshot {
+.bio img.mugshot {
   width: 5rem;
   border: 1px solid #ccc;
-  border-radius: 50%;
   padding: 5px;
   background: #FFF;
 }
@@ -288,18 +291,32 @@ nav .pages li:hover {
   min-width: 300px;
   max-width: 400px;
 }
+.meta {
+  margin-top: -0.25rem;
+  margin-bottom: 0.75rem;
+}
+.meta img.mugshot {
+  float: left;
+  margin-left: 0.33rem;
+  margin-right: 0.66rem;
+}
+.meta span {
+  display: block;
+  font-size: 1rem;
+  line-height: 1;
+}
+.post .meta {
+  margin-bottom: 1rem;
+}
 .collection .list {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
 .collection .list .item {
+  margin: 1rem 0;
   list-style: none;
   padding: 1rem;
-}
-.collection .list .item .meta {
-  margin-top: -0.25rem;
-  margin-bottom: 0.75rem;
 }
 .collection .list .title a {
   color: #3E2B2E;
@@ -315,6 +332,12 @@ nav .pages li:hover {
   /*list-style-position: inside;*/
   margin-left: 2rem;
   padding-left: 1rem;
+}
+.post .content h2,
+.post .content h3,
+.post .content h4,
+.post .content h5 {
+  margin: 1rem 0;
 }
 .post .content img {
   max-width: 100%;
@@ -453,6 +476,7 @@ nav .desktop {
   }
 }
 .signup form {
+  margin: 1rem auto;
   text-align: center;
 }
 .signup form label {
