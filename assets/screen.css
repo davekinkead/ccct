@@ -555,6 +555,9 @@ input[type=email]:invalid {
   padding: 0.25rem;
 }
 @media screen and (min-width: 674px) {
+  .newsletter .formkit-form {
+    margin: 2rem auto;
+  }
   .newsletter .formkit-form .formkit-input {
     width: 100% !important;
     min-width: 674px;
