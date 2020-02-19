@@ -365,6 +365,9 @@ img.mugshot {
 .services.post h5 {
   text-align: center;
 }
+.services.post input {
+  width: 100% !important;
+}
 footer {
   background-color: #302022;
   color: #9E9596;
@@ -555,10 +558,12 @@ input[type=email]:invalid {
   padding: 0.25rem;
 }
 @media screen and (min-width: 674px) {
-  .newsletter .formkit-form {
+  .newsletter .formkit-form,
+  .services .formkit-form {
     margin: 2rem auto;
   }
-  .newsletter .formkit-form .formkit-input {
+  .newsletter .formkit-form .formkit-input,
+  .services .formkit-form .formkit-input {
     width: 100% !important;
     min-width: 674px;
   }
