@@ -559,11 +559,13 @@ input[type=email]:invalid {
 }
 @media screen and (min-width: 674px) {
   .newsletter .formkit-form,
-  .services .formkit-form {
+  .services .formkit-form,
+  .free-course .formkit-form {
     margin: 2rem auto;
   }
   .newsletter .formkit-form .formkit-input,
-  .services .formkit-form .formkit-input {
+  .services .formkit-form .formkit-input,
+  .free-course .formkit-form .formkit-input {
     width: 100% !important;
     min-width: 674px;
   }
