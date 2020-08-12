@@ -257,7 +257,10 @@ img.mugshot {
   position: relative;
 }
 .bio img.mugshot {
+  height: 5rem;
   width: 5rem;
+  object-position: center;
+  object-fit: cover;
   border: 1px solid #ccc;
   padding: 5px;
   background: #FFF;
