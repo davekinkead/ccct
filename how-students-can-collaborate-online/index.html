@@ -10,7 +10,7 @@
     <link rel="canonical" href="https://criticalthinking.org.au/how-students-can-collaborate-online/" />
     <link href="//fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i|Source+Sans+Pro:300,700,900" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="/assets/screen.css?x=1" media="screen">
-    <script src="https://kit.fontawesome.com/82c5c76c75.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/82c5c76c75.js" crossorigin="anonymous"></script> -->
   
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
@@ -59,14 +59,20 @@
         </div>  </a></span>
       <span class="home mobile"><a href="/">Critical<strong>Thinking</strong></a></span>
       <ul class="pages">
-        <li><span><a href="#" onclick="hideNavigation()"><i class="fas fa-times"></i></a></span></li>
+        <li><span><a href="#" onclick="hideNavigation()">X</a></span></li>
         <li><span><a href="/services">Services</a></span></li>
         <li><span><a href="/research">Research</a></span></li>
         <li><span><a href="/resources">Resources</a></span></li>
         <li><span><a href="/thoughts">Thoughts</a></span></li>
         <li><span><a href="/about-us">About Us</a></span> </li>
       </ul>
-      <span class="hamburger"><a href="#" onclick="showNavigation()"><i class="fas fa-bars"></i></a></span>
+      <span class="hamburger"><a href="#" onclick="showNavigation()">
+        <svg viewBox="0 0 100 80" width="25" height="25" fill="currentColor">
+          <rect width="100" height="15"></rect>
+          <rect y="30" width="100" height="15"></rect>
+          <rect y="60" width="100" height="15"></rect>
+        </svg>
+      </a></span>
     </nav>
     <section class="hero">
       <div class="bg-image" style="background-image: url(/media/online-collaboration.jpg);"></div>
