@@ -403,6 +403,9 @@ footer #contact {
   text-align: center;
   width: 90%;
 }
+footer .contact a {
+  padding: 0.5rem;
+}
 footer .links span {
   display: inline-block;
   width: 100%;
