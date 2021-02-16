@@ -171,9 +171,9 @@
       </div>
     </footer>
     
-    <!-- Navigation -->
     <script>
     
+      //  Navigation panel show/hide
       function hideNavigation() {
         document.querySelector('nav .pages').style.display = 'none';
       }
@@ -181,6 +181,15 @@
       function showNavigation() {
         document.querySelector('nav .pages').style.display = 'block';    
       }
+    
+      //  Add target="_blank" to external links
+      document.querySelectorAll('a').forEach((link) => {
+        if ( link.href.toString().match(`https://criticalthinking.org.au`) ) {
+          //  do nothing ... keep internal links
+        } else {
+          link.setAttribute('target', '_blank')
+        }
+      })
     </script>
   </body>
 </html>
